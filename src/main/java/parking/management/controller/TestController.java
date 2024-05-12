@@ -20,12 +20,12 @@ public class TestController {
 	public TestController(TestService testService) {
 		this.testService = testService;
 	}
-//	@CrossOrigin(origins="*")
+	@CrossOrigin(origins="*")
 	@GetMapping("/users")
 	public List<User> findAll(){
 		return testService.findAll();
 	}
-//	@CrossOrigin(origins="*")
+	@CrossOrigin(origins="*")
 	@PostMapping("/users")
 	public User createCustomer(@RequestBody User user) {
 		testService.save(user);
