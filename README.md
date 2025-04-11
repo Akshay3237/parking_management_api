@@ -1,1 +1,1 @@
-This is java application which contains many restfull apis.
+This is java application which contains restfull apis.
